@@ -7,3 +7,4 @@ crear la portada principal con nuestros datos personales.
 - pasatiempos
 - actividades favoritas
 observacion la pagina debe tener al menos una imagen.
+tarea hecha
