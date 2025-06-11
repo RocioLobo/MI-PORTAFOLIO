@@ -1,66 +1,93 @@
-<section>
-    <h1> MI PORTADA</h1>
-</section>
-<hr> 
-<section>
-    <h2>nombre</h2>
-<p>rocio rosalinda</p>
-</section>
-<hr> 
-<section>
-    <h2>Descripcion</h2>
-<p>soy estudiante de arquitectura de plataforma y servicios tecnologias de la informacion</p>
-</section>
-<hr> 
-<section>
-    <h2>hobbies</h2>
-<ul>
-    <li>leer libros</li>
-    <li>correr escuchando musica</li>
-    <li>escuchar musica</li>
-</ul>
-</section>
-<hr> 
-<section>
-    <h2>pasatiempos</h2>
-<ul>
-    <li>ver doramas</li>
-    <li>hacer pasteles</li>
-    <li>caminar en el campo</li>
-</ul>
-</section>
-<hr> 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portafolio - Rocio Rosalinda</title>
+  <link rel="stylesheet" href="./css/style.css">
+  
+</head>
+<body>
+
+<header>
+    <nav>
+         <ul>
+        <a href="">Inicio</a></li>
+        <a href="./pages/sobre_Mi.html">sobre_Mi</a>
+        <a href="./pages/proyectos">proyectos</a>
+        <a href="./pages/Contacto.html">Contacto</a>
+      </ul>
+    </nav>
+  <h1>Rocio Rosalinda Lobo Jacinto</h1>
+  <p>Apasionada por diseño grafico</p>
+</header>
+
+<article>
+  <h2>Sobre Mi</h2>
+  <p>Soy estudiante de APSII V y me gusta el diseño grafico, cableado estructurado de redes, reparación de equipos de cómputo.</p>
+
+  <section class="flex">
     <section>
-        <h2>actividades favoritas</h2>
-<ul>
-    <li>decorar tortas</li>
-    <li>decorar fiestas de cumpleaños</li>
-    <li>realizar cableados de red</li>
-</ul>
+      <h3>Habilidades Técnicas</h3>
+      <ul>
+        <li>diseño grafico</li>
+        <li>prototipado de ux</li>
+        <li>cableado estructurado de redes</li>
+      </ul>
     </section>
-<hr> 
 
- <section>
- <h2>mi imagen</h2>
-<img src="./assets/WhatsApp Image 2023-12-04 at 6.30.06 AM.jpeg" alt="aqui se encuentra la imagen de mi perfil"
-width="200px"> 
- </section>
+    <section>
+      <h3>Soft Skills</h3>
+      <label>HTML</label>
+      <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
 
-<hr> 
+      <label>CSS</label>
+      <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
 
-<section>
-    <a href="https://facebook.com" target="_blank"><img src="./assets/facebook-brands.svg" alt="logo facebokk" width="5%"</a>
-    <a href="https://wa.me /+ 51917452076" target="_blank"><img src="./assets/whatsapp-brands.svg" alt="logo WhatsApp" width="5%"</a>
+      <label>Python</label>
+      <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+    </section>
+  </section>
+</article>
 
+<article>
+  <h2>Proyectos</h2>
+  <section class="flex">
+    <section>
+      <h4>Ecommerce</h4>
+      <p><a href="https://github.com/mirepo">https://github.com/mirepo</a></p>
+    </section>
+    <section>
+      <h4>Ecommerce</h4>
+      <p><a href="https://github.com/mirepo">https://github.com/mirepo</a></p>
+    </section>
+    <section>
+      <h4>Ecommerce</h4>
+      <p><a href="https://github.com/mirepo">https://github.com/mirepo</a></p>
+    </section>
+  </section>
+</article>
 
-</section>
-<hr>
+<article>
+  <h2>Contacto</h2>
+  <form>
+    <fieldset>
+      <legend>Redes sociales</legend>
+      <label><input type="radio" name="contacto"> Whatsapp</label><br>
+      <label><input type="radio" name="contacto"> Facebook</label><br>
+      <label><input type="radio" name="contacto"> TikTok</label><br>
+      <label><input type="radio" name="contacto" checked> <span style="color:red">LinkedIn</span></label>
+    </fieldset>
+    <br>
+    <label>Nombre:<br><input type="text" name="nombre"></label><br>
+    <label>Celular:<br><input type="text" name="celular"></label><br>
+    <label>Email:<br><input type="email" name="email"></label><br><br>
+    <button type="submit">Enviar</button>
+  </form>
+  <footer>
+    <p>&copy; 2025 - Rocio Rosalinda Lobo Jacinto</p>
+  </footer>
+</article>
+<script src="./js/script.js"></script>
 
-<a href="https://facebook.com">facebook</a>
-<a href="https://wa.me /+ 51917452076">wasap</a>
-
-<hr>
-<h2>informacion/h2>
-<a href="./pages/contacto.html">contacto</a>
-
-
+</body>
+</html>
