@@ -1,65 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Rocio Rosalinda</title>
-  <link rel="stylesheet" href="./css/style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Rocio Rosalinda</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+    body { font-family: 'Fira Mono', monospace; }
+  </style>
 </head>
-<body>
+<body class="bg-white text-gray-800">
 
-  <header>
-    <span><strong>Rocio Rosalinda</strong></span>
-    <nav>
-      <a href="">Inicio</a>
-      <a href="./pages/sobre_Mi.html">Sobre Mi</a>
-      <a href="./pages/proyectos">Proyectos</a>
-      <a href="./pages/contacto.html">Contacto</a>
-    </nav>
-  </header>
+<!-- NAVBAR -->
+<header class="flex justify-between items-center p-4 bg-gradient-to-r from-white to-red-200">
+  <strong class="text-xl">Rocio Rosalinda</strong>
+  <nav class="space-x-4 text-sm">
+    <a href="#inicio" class="hover:underline">Inicio</a>
+    <a href="#sobremi" class="hover:underline">Sobre Mi</a>
+    <a href="#proyectos" class="hover:underline">Proyectos</a>
+    <a href="#contacto" class="hover:underline">Contacto</a>
+  </nav>
+</header>
 
-  <main>
-    <article>
-      <h1>Rocio Rosalinda<br>Lobo Jacinto</h1>
-      <p>Apasionada por el diseño grafico</p>
-      <button>Contáctame</button>
-    </article>
-    <figure>
-      <img src="./assets/foto de rocio rosalinda.jfif" alt="foto de rocio Rosalinda" width="20%"> 
+<!--  PRESENTACIÓN -->
+<main id="inicio" class="flex flex-col items-center px-8 py-10 gap-6 bg-gradient-to-r from-white to-pink-200 min-h ">
+
+  <!-- Contenedor horizontal: texto e imagen estirados a los extremos -->
+  <section class="flex justify-between w-full max-w-7xl items-center">
+
+    <!-- Texto bien a la izquierda -->
+    <section class="w-1/2 text-left text-bg-gray-50 text-gray-800 pl-12">
+      <h1 class="text-4xl font-bold">Rocio Rosalinda Lobo Jacinto</h1>
+      <blockquote class="mt-2 text-lg">"Apasionada por el diseño gráfico"</blockquote>
+    </section>
+
+    <!-- Imagen bien a la derecha -->
+    <figure class="w-1/2 flex justify-end pr-12">
+      <img src="./public/foto de rocio rosalinda.jfif" alt="Foto de Rocio" class="w-48 h-48 rounded-full shadow-lg object-cover" />
     </figure>
-  </main>
-  
-  <section>
-    <h1>Sobre Mí</h1>
-    <p>
-      Soy estudiante de APSTI IV y me gusta el diseño grafico, cableado estructurado de redes,
-      reparación de equipos de cómputo, me gusta prototipado.
-    </p>
-
-    <article>
-      <strong>Habilidades Técnicas</strong>
-      <ul>
-        <li>html (style)</li>
-        <li>diseño grafico (diseño, editar)</li>
-        <li>Control de versiones (Git)</li>
-      </ul>
-    </article>
-
-    <article>
-      <strong>Soft Skill</strong>
-      <p>HTML</p>
-      <progress value="80" max="100"></progress>
-      <p>CSS</p>
-      <progress value="75" max="100"></progress>
-      <p>Python</p>
-      <progress value="85" max="100"></progress>
-    </article>
 
   </section>
 
+  <!-- Botón centrado debajo -->
+  <section class="mt-4">
+    <button class="bg-pink-200 text-black px-6 py-2 rounded hover:bg-purple-800">
+      Contáctame
+    </button>
+  </section>
 
-  
-<script src="./js/script.js"></script>
+</main>
+
+
+
+
+<!-- SOBRE MÍ -->
+<section id="sobremi" class="p-8 bg-gradient-to-r from-white to-pink-200 rounded-lg shadow m-4">
+  <h2 class="text-2xl font-bold mb-4">Sobre Mi</h2>
+  <p class="mb-4">
+    Soy estudiante de APSTII IV y me gusta el diseño grafico, cableado estructurado de redes,reparacion de equipos de computo,me gusta prototipado.
+  </p>
+  <article class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <section>
+      <h3 class="font-semibold mb-2">Habilidades Técnicas</h3>
+      <ul class="list-disc pl-5 text-sm">
+        <li>html(style)</li>
+        <li>diseño grafico (diseño,editar)</li>
+        <li>control de versiones (Git)</li>
+      </ul>
+    </section>
+    <section>
+      <h3 class="font-semibold mb-2">Soft Skills</h3>
+      <label class="block">HTML <progress value="90" max="100" class="w-full"></progress></label>
+      <label class="block">CSS <progress value="80" max="100" class="w-full"></progress></label>
+      <label class="block">Python <progress value="75" max="100" class="w-full"></progress></label>
+    </section>
+  </article>
+</section>
+
+<!-- 🧑‍💻 PROYECTOS -->
+<section id="proyectos" class="p-8">
+  <h2 class="text-2xl font-bold mb-6">Proyectos</h2>
+  <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <article class="bg-white rounded-lg p-4 shadow text-center">
+      <figure class="h-32 bg-gray-200 mb-2 flex items-center justify-center">[Imagen]</figure>
+      <h3 class="font-mono font-bold">Ecommerce</h3>
+      <a href="https://github.com/mirepo" class="text-blue-600 underline text-sm">https://github.com/mirepo</a>
+    </article>
+    <article class="bg-white rounded-lg p-4 shadow text-center">
+      <figure class="h-32 bg-gray-200 mb-2 flex items-center justify-center">[Imagen]</figure>
+      <h3 class="font-mono font-bold">Ecommerce</h3>
+      <a href="https://github.com/mirepo" class="text-blue-600 underline text-sm">https://github.com/mirepo</a>
+    </article>
+    
+  </section>
+</section>
+
+<!-- 📞 CONTACTO -->
+<section id="contacto" class="p-8 bg-gradient-to-r from-white to-pink-200 rounded shadow m-4">
+  <h2 class="text-2xl font-bold mb-4">Contacto</h2>
+  <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <fieldset class="space-y-2">
+      <label class="flex items-center gap-2"><input type="radio" name="contacto" class="accent-green-500" />Whatsapp</label>
+      <label class="flex items-center gap-2"><input type="radio" name="contacto" class="accent-blue-600" />Facebook</label>
+      <label class="flex items-center gap-2"><input type="radio" name="contacto" class="accent-pink-500" />TikTok</label>
+      <label class="flex items-center gap-2 text-red-600 font-bold"><input type="radio" name="contacto" class="accent-red-600" />LinkedIn</label>
+    </fieldset>
+    <fieldset class="space-y-2">
+      <label>Nombre: <input type="text" class="w-full border rounded px-2 py-1" /></label>
+      <label>Celular: <input type="text" class="w-full border rounded px-2 py-1" /></label>
+      <label>Email: <input type="email" class="w-full border rounded px-2 py-1" /></label>
+      <button type="submit" class="mt-2 bg-gray-800 text-white px-4 py-2 rounded">Enviar</button>
+    </fieldset>
+  </form>
+</section>
+
+<!-- 👣 FOOTER -->
+<footer class="text-center text-gray-600 text-sm py-4">
+  © 2025 - Rocio Rosalinda Lobo Jacinto
+</footer>
 
 </body>
 </html>
