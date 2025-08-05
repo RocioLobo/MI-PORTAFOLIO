@@ -9,3 +9,4 @@ crear la portada principal con nuestros datos personales.
 observacion la pagina debe tener al menos una imagen.
 
 - `width` para poner tamaño de imagen esto se le conce como ruta relativa
+- bg-gradient-to-r from-white to-pink-200 
