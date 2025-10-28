@@ -10,10 +10,13 @@
     body { font-family: 'Fira Mono', monospace; }
   </style>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-fixed bg-cover bg-center bg-no-repeat text-gray-800"
+      style="background-image: url('./public/ROUSS.jpg">
+  
 
 <!-- NAVBAR -->
-<header class="flex justify-between items-center p-4 bg-gradient-to-r from-white to-red-200">
+<header class=" max-w-20xl mx-auto fixed top-0 left-0 w-full z-50 flex justify-between items-center p-4 bg-gradient-to-r from-white to-red-200 shadow-lg backdrop-blur-sm">
+  
   <strong class="text-xl">Rocio Rosalinda</strong>
   <nav class="space-x-4 text-sm">
     <a href="#inicio" class="hover:underline">Inicio</a>
@@ -24,10 +27,11 @@
 </header>
 
 <!--  PRESENTACIÓN -->
-<main id="inicio" class="flex flex-col items-center px-8 py-10 gap-6 bg-gradient-to-r from-white to-pink-200 min-h ">
+<main id="inicio" class="  max-w-20xl mx-auto  mt-20 flex flex-col items-center px-8 py-10 gap-6 bg-gradient-to-r from-white to-pink-200"style="background-image: url('./public/FONDO.jpg">
 
   <!-- Contenedor horizontal: texto e imagen estirados a los extremos -->
   <section class="flex justify-between w-full max-w-7xl items-center">
+
 
     <!-- Texto bien a la izquierda -->
     <section class="w-1/2 text-left text-bg-gray-50 text-gray-800 pl-12">
@@ -56,7 +60,9 @@
 
 
 <!-- SOBRE MÍ -->
-<section id="sobremi" class="p-8 bg-gradient-to-r from-white to-pink-200 rounded-lg shadow m-4">
+<section id="sobremi" class=" max-w-20xl mx-auto p-8 bg-gradient-to-r from-white to-pink-200 rounded-lg shadow m-4" 
+style="background-image: url('./public/FONDO.jpg">
+
   <h2 class="text-2xl font-bold mb-4">Sobre Mi</h2>
   <p class="mb-4">
     Soy estudiante de APSTII IV y me gusta el diseño grafico, cableado estructurado de redes,reparacion de equipos de computo,me gusta prototipado.
@@ -80,7 +86,8 @@
 </section>
 
 <!-- PROYECTOS -->
-<section id="proyectos" class="p-8 bg-gradient-to-r from-white to-pink-200 rounded-lg shadow m-4">
+<section id="proyectos" class=" max-w-20xl mx-auto p-8 bg-gradient-to-r from-white to-pink-200 rounded-lg shadow m-4"style="background-image: url('./public/FONDO.jpg">
+
   <h2 class="text-2xl font-bold mb-6">Proyectos</h2>
   
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -125,26 +132,32 @@
 </section>
 
 <!-- CONTACTO -->
-<section id="contacto" class="p-8 bg-gradient-to-r from-white to-pink-200 rounded shadow m-4">
-  <h2 class="text-2xl font-bold mb-4">Contacto</h2>
-  <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
-    <fieldset class="space-y-2">
-      <label class="flex items-center gap-2"><input type="radio" name="contacto" class="accent-green-500" />Whatsapp</label>
-      <label class="flex items-center gap-2"><input type="radio" name="contacto" class="accent-blue-600" />Facebook</label>
-      <label class="flex items-center gap-2"><input type="radio" name="contacto" class="accent-pink-500" />TikTok</label>
-      <label class="flex items-center gap-2 text-red-600 font-bold"><input type="radio" name="contacto" class="accent-red-600" />LinkedIn</label>
-    </fieldset>
-    <fieldset class="space-y-2">
-      <label>Nombre: <input type="text" class="w-full border rounded px-2 py-1" /></label>
-      <label>Celular: <input type="text" class="w-full border rounded px-2 py-1" /></label>
-      <label>Email: <input type="email" class="w-full border rounded px-2 py-1" /></label>
-      <button type="submit" class="mt-2 bg-gray-800 text-white px-4 py-2 rounded">Enviar</button>
-    </fieldset>
-  </form>
+<section id="contacto" class="max-w-20xl mx-auto p-8 bg-gradient-to-r from-white to-pink-200 rounded shadow m-4 text-center"style="background-image: url('./public/FONDO.jpg">
+ 
+  <h2 class="text-2xl font-bold mb-6">Contáctame</h2>
+  <div class="flex flex-wrap justify-center gap-6 text-lg">
+
+    <a href="https://wa.me/51999999999" target="_blank" class="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition">
+      💬 WhatsApp
+    </a>
+
+    <a href="https://www.facebook.com/" target="_blank" class="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+      📘 Facebook
+    </a>
+
+    <a href="https://www.tiktok.com/" target="_blank" class="flex items-center gap-2 bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 transition">
+      🎵 TikTok
+    </a>
+
+    <a href="https://www.linkedin.com/" target="_blank" class="flex items-center gap-2 bg-sky-700 text-white px-4 py-2 rounded hover:bg-sky-800 transition">
+      💼 LinkedIn
+    </a>
+
+  </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="text-center text-gray-600 text-sm py-4">
+<footer class=" max-w-20xl mx-auto text-center text-gray-600 text-sm py-4">
   © 2025 - Rocio Rosalinda Lobo Jacinto
 </footer>
 
